@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Mnemonics and Techniques</title>
+    <style>
+        @media print {
+            body { margin: 0.5in; }
+            .no-break { page-break-inside: avoid; }
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.4;
+            margin: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            border-bottom: 4px solid #3498db;
+            padding-bottom: 15px;
+        }
+        
+        .mnemonic-card {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 6px solid #e74c3c;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            color: white;
+            transition: transform 0.2s;
+        }
+        
+        .mnemonic-card:nth-child(even) {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            border-left-color: #3498db;
+        }
+        
+        .mnemonic-card:nth-child(3n) {
+            background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+            border-left-color: #27ae60;
+        }
+        
+        .mnemonic-card:nth-child(4n) {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            border-left-color: #f39c12;
+            color: #2c3e50;
+        }
+        
+        .mnemonic-card:nth-child(5n) {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            border-left-color: #9b59b6;
+            color: #2c3e50;
+        }
+        
+        .mnemonic-card:nth-child(6n) {
+            background: linear-gradient(135deg, #d299c2 0%, #fef9d7 100%);
+            border-left-color: #e67e22;
+            color: #2c3e50;
+        }
+        
+        .mnemonic-title {
+            font-size: 1.8em;
+            font-weight: bold;
+            margin-bottom: 8px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+        
+        .mnemonic-category {
+            font-size: 1.1em;
+            font-weight: 600;
+            margin-bottom: 12px;
+            opacity: 0.9;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .mnemonic-description {
+            font-size: 1em;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+        
+        .mnemonic-url {
+            font-size: 0.9em;
+            font-style: italic;
+            opacity: 0.8;
+            margin-top: 10px;
+        }
+        
+        .mnemonic-url a {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: 1px dotted currentColor;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+            .container {
+                padding: 20px;
+                margin: 10px;
+            }
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧪 Testing Mnemonics & Techniques</h1>
+        
+        <div class="grid-container">
+            <div class="mnemonic-card no-break">
+                <div class="mnemonic-title">CRUSSPIC STMPL</div>
+                <div class="mnemonic-category">Quality Characteristics</div>
+                <div class="mnemonic-description">Capability, reliability, usability, efficiency, maintainability, portability, performance, installability, compatibility, interoperability, security, scalability</div>
+                <div class="mnemonic-url"><a href="http://bit.ly/stmpl-m">http://bit.ly/stmpl-m</a></div>
+            </div>
+
+            <div class="mnemonic-card no-break">
+                <div class="mnemonic-title">RIMGEA</div>
+                <div class="mnemonic-category">Build Advocacy</div>
+                <div class="mnemonic-description">Replicate & isolate it, maximize it, generalize it, internalize it, and say it clearly & dispassionately</div>
+                <div class="mnemonic-url"><a href="http://bit.ly/rimgea-m">http://bit.ly/rimgea-m</a></div>
+            </div>
+
+            <div class="mnemonic-card no-break">
+                <div class="mnemonic-title">FIBLOTS</div>
+                <div class="mnemonic-category">Model Workloads/Perf. Test</div>
+                <div class="mnemonic-description">Frequent, intensive, business critical, legal, obvious, arithmetically risky, stakeholder mandated</div>
+                <div class="mnemonic-url"><a href="http://bit.ly/fiblots-m">http://bit.ly/fiblots-m</a></div>
+            </div>
+
+            <div class="mnemonic-card no-break">
+                <div class="mnemonic-title">DVLA PC</div>
+                <div class="mnemonic-category">API Maintainability</div>
+                <div class="mnemonic-description">Diagnostic, versioning, logical, accessibility, composable, consumer</div>
+                <div class="mnemonic-url"><a href="http://bit.ly/dvlapi-m">http://bit.ly/dvlapi-m</a></div>
+            </div>
+
+            <div class="mnemonic-card no-break">
+                <div class="mnemonic-title">MCOASTER</div>
+                <div class="mnemonic-category">Reporting</div>
+                <div class="mnemonic-description">Mission, coverage, obstacles, audience, techniques, environment, risk</div>
+                <div class="mnemonic-url">Test risk by/mcoaster-m</div>
+            </div>
+
+            <div class="mnemonic-card no-break">
+                <div class="mnemonic-title">FEW HICCUPPS</div>
+                <div class="mnemonic-category">Consistency</div>
+                <div class="mnemonic-description">Familiarity, explainability, odd, image, comparable, products, history, user, degrees, worked, purpose, causes</div>
+                <div class="mnemonic-url"><a href="http://bit.ly/fewhiccupps-m">http://bit.ly/fewhiccupps-m</a></div>
+            </div>
+
+            <div class="mnemonic-card no-break">
+                <div class="mnemonic-title">SPIES</div>
+                <div class="mnemonic-category">Internationalisation</div>
+                <div class="mnemonic-description">Special characters, platform, input limitations, error messages, special events</div>
+                <div class="mnemonic-url"><a href="http://bit.ly/spies-m">http://bit.ly/spies-m</a></div>
+            </div>
+
+            <div class="mnemonic-card no-break">
+                <div class="mnemonic-title">SEED MATALI</div>
+                <div class="mnemonic-category">GUI Step Automation</div>
+                <div class="mnemonic-description">Synchronize, explicit, extendable, number of statements, types of statements, log, investigate</div>
+                <div class="mnemonic-url"><a href="http://bit.ly/seedmatali-m">http://bit.ly/seedmatali-m</a></div>
+            </div>
+
+            <div class="mnemonic-card no-break">
+                <div class="mnemonic-title">FAILURE</div>
+                <div class="mnemonic-category">Error Handling</div>
+                <div class="mnemonic-description">Functional, synchronization, log, all, recovery, regional</div>
+                <div class="mnemonic-url"><a href="http://bit.ly/failure-m">http://bit.ly/failure-m</a></div>
+            </div>
+
+            <div class="mnemonic-card no-break">
+                <div class="mnemonic-title">SACKED SCOWS</div>
+                <div class="mnemonic-category">Learning</div>
+                <div class="mnemonic-description">Creation place, reflection, systematic, cognitive, savvy, knowledge attacks knowledge, experiment, disposable time, stories, compelling ideas</div>
+                <div class="mnemonic-url"><a href="http://bit.ly/sackedscows-m">http://bit.ly/sackedscows-m</a></div>
+            </div>
+
+            <div class="mnemonic-card no-break">
+                <div class="mnemonic-title">DEED HELP OF</div>
+                <div class="mnemonic-category">API Consumability</div>
+                <div class="mnemonic-description">Domain specific names, samples, easy to learn, examples, precise, clear, readability code, images of least astonishment</div>
+                <div class="mnemonic-url"><a href="http://bit.ly/api-m">http://bit.ly/api-m</a></div>
+            </div>
+
+            <div class="mnemonic-card no-break">
+                <div class="mnemonic-title">HFECTRAS</div>
+                <div class="mnemonic-category">Perf. Test Specification</div>
+                <div class="mnemonic-description">Investigation of, validation of, risk-based or, environment imposed, time earlier, resource, consumption under, integrated or, threeful conditions</div>
+                <div class="mnemonic-url"><a href="http://bit.ly/hfectras-m">http://bit.ly/hfectras-m</a></div>
+            </div>
+
+            <div class="mnemonic-card no-break">
+                <div class="mnemonic-title">DOPELLING GUN</div>
+                <div class="mnemonic-category">Mobile Applications</div>
+                <div class="mnemonic-description">Communication, orientation, platform, function, interface, gestures, guidelines, policies, applications</div>
+                <div class="mnemonic-url"><a href="http://bit.ly/dopellinggun-m">http://bit.ly/dopellinggun-m</a></div>
+            </div>
+
+            <div class="mnemonic-card no-break">
+                <div class="mnemonic-title">DUFFSSCRA</div>
+                <div class="mnemonic-category">Test Techniques</div>
+                <div class="mnemonic-description">Domain, user, function, flow, stress, scenario, claims, risk, automatic</div>
+                <div class="mnemonic-url"><a href="http://bit.ly/etsm-m">http://bit.ly/etsm-m</a></div>
+            </div>
+
+            <div class="mnemonic-card no-break">
+                <div class="mnemonic-title">ICECOVERMAD</div>
+                <div class="mnemonic-category">API Testing</div>
+                <div class="mnemonic-description">Integration, consumers, response, operations, commands, error handling, functionality, serialization, definitions</div>
+                <div class="mnemonic-url"><a href="http://bit.ly/icecoverm-m">http://bit.ly/icecoverm-m</a></div>
+            </div>
+
+            <div class="mnemonic-card no-break">
+                <div class="mnemonic-title">I SLICED UP FUN</div>
+                <div class="mnemonic-category">Mobile Applications</div>
+                <div class="mnemonic-description">Inputs, store, location, interactions/interruptions, communication, ergonomic, data, platform, function, user scenarios, networks</div>
+                <div class="mnemonic-url"><a href="http://bit.ly/slicedfun-m">http://bit.ly/slicedfun-m</a></div>
+            </div>
+
+            <div class="mnemonic-card no-break">
+                <div class="mnemonic-title">SLIME</div>
+                <div class="mnemonic-category">Task Ordering</div>
+                <div class="mnemonic-description">Security, languages, requirements, measurement, editing</div>
+                <div class="mnemonic-url"><a href="http://bit.ly/slime-m">http://bit.ly/slime-m</a></div>
+            </div>
+
+            <div class="mnemonic-card no-break">
+                <div class="mnemonic-title">TERMS</div>
+                <div class="mnemonic-category">Test Automation</div>
+                <div class="mnemonic-description">Tools & technology, execution, requirements & risks, maintenance, security</div>
+                <div class="mnemonic-url"><a href="http://bit.ly/terms-m">http://bit.ly/terms-m</a></div>
+            </div>
+
+            <div class="mnemonic-card no-break">
+                <div class="mnemonic-title">PROOF</div>
+                <div class="mnemonic-category">Session Based Test Debrief</div>
+                <div class="mnemonic-description">Past, results, obstacles, outlook, feelings</div>
+                <div class="mnemonic-url"><a href="http://bit.ly/proof-m">http://bit.ly/proof-m</a></div>
+            </div>
+
+            <div class="mnemonic-card no-break">
+                <div class="mnemonic-title">SPIFFY</div>
+                <div class="mnemonic-category">Microtest</div>
+                <div class="mnemonic-description">Small, precise, isolated, fast, frequently run</div>
+                <div class="mnemonic-url"><a href="http://bit.ly/spiffy-m">http://bit.ly/spiffy-m</a></div>
+            </div>
+
+            <div class="mnemonic-card no-break">
+                <div class="mnemonic-title">CRUMBS</div>
+                <div class="mnemonic-category">Test Automation</div>
+                <div class="mnemonic-description">Confirmation, gov, criteria & completeness, risk, robustness & maintainability & usability, functionality & minimal effort</div>
+                <div class="mnemonic-url"><a href="http://bit.ly/crumbs-m">http://bit.ly/crumbs-m</a></div>
+            </div>
+        </div>
+
+        <div class="footer">
+            📚 Comprehensive Testing Mnemonics Reference • Generated from Testing Mind Map
+        </div>
+    </div>
+</body>
+</html>
